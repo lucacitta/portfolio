@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Luca Cittá Giordano</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/portfolio/favicon.png' %}" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="">Luca Cittá Giordano</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre mí</a></li>
+          <li><a class="nav-link scrollto" href="#services">Estudios</a></li>
+          <li><a class="nav-link scrollto" href="#experiencia">Experiencia</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      {% if 'valido' in request.GET %}
+      <div class="alert alert-success" role="alert">
+        El formulario se envio correctamente, deberia llegarte un mail de confirmacion, muchas gracias por contactar :)
+      </div>
+      {% endif %}
+      <h1>Luca Cittá Giordano</h1>
+      <h2>Soy programador Python y desarrollador Backend</h2>
+      <a href="#about" class="btn-get-started scrollto">Comencemos</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sobre mí</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <i class="fab fa-html5 iconitos"></i>
+            <i class="fab fa-css3-alt iconitos"></i>
+            <i class="fab fa-bootstrap iconitos"></i>
+            <i class="fab fa-python iconitos"></i>
+            <img src="{% static 'img/portfolio/django.png' %}" style="width: 4rem; height: 4rem; margin-left: 3rem;" class="iconitos" alt="">
+            </i>
+            <!-- <img src="{% static 'img/portfolio/about-img.jpg' %}" class="img-fluid" alt=""> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Soy Luca Cittá Giordano, argentino de 22 años Actualmente viviendo en Valencia, España.</h3>
+            <p class="fst-italic">
+              Siempre me gusto la programacion, pero nunca lo habia pensado realmente como una carrera, siempre fue mas un hobbie, programando arduinos y cosas simples.
+            </p>
+            <p>
+              Hace ya un tiempo que me me propuse trabajar de lo que me guste, aunque no sea exactamente lo que estoy estudiando me apaciona y quiero convertirme en un buen profesional. <br>
+              Actualmente estoy estudiando principalmente programación en Python orientado al backend con Django, pero me gustaria expandirme a otras tecnologias como Java Script para ampliar mi stack de herramientas.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i>Me gusta trabajar en equipo y conocer gente nueva.</li>
+              <li><i class="bi bi-check2-circle"></i>Estoy ansioso por seguir aprendiendo y crecer como profesional.</li>
+              <li><i class="bi bi-check2-circle"></i>Estoy listo para enfrentar los desafios del mundo laboral en el ambito.</li>
+            </ul>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/luca-citta-giordano-3a70b120a/"><i class="bi bi-linkedin" id="icon1"></i></a>
+              <a href="https://github.com/lucacitta"><i class="bi bi-github" id="icon2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Studies Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Estudios</h2>
+          <p>Estos son mis estudios hasta la fecha, continuare realizando cursos para crecer como profesional y los agregare aquí.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-award-fill"></i></div>
+            <h4 class="title"><p href="">Bachillerato en turismo</p></h4>
+            <p class="description">Secundario completo en Colegio Normal numero 2 en la modalidad de turismo.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-award"></i></div>
+            <h4 class="title"><p>Tecnicatura Universitaria en Mecatronica</p></h4>
+            <p class="description">Actualmente solo me falta la tesis para obtener mi titulo.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-award-fill"></i></div>
+            <h4 class="title"><p>Python And Django Framework For Beginners Complete Courses</p></h4>
+            <p><p class="description">Completado en Udemy. Link de verificación:</p><a href="https://www.ude.my/UC-afd1e1ac-7b5f-4fc5-8541-e001dd7f6697">ude.my/UC-afd1e1ac-7b5f-4fc5-8541-e001dd7f6697</a></p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-award-fill"></i></div>
+            <h4 class="title"><p href="">Curso introductorio de Python online</p></h4>
+            <p class="description">Curso completado en IEEE, no posee link de verificacion.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-award-fill"></i></div>
+            <h4 class="title"><p href="">PROBAR DJANGO | Crear una Aplicación Web</p></h4>
+            <p class="description">Completado en Udemy, al ser gratuito no posee entrega de certificado.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-award-fill"></i></div>
+            <h4 class="title"><p href="">Python 3.X</p></h4>
+            <p class="description">Completado en Edutin, al haberlo realizado de manera gratuita no entrega certificado.</p>
+          </div>
+        <div class="col-lg-4 col-md-6 icon-box">
+          <div class="icon"><i class="bi bi-award-fill"></i></div>
+          <h4 class="title"><p>Curso de Introducción al Desarrollo Web: HTML y CSS </p></h4>
+          <p><p class="description">Completado en Google Activate. Id certificacion:KCE QNH NW3. Link de verificación:</p><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">https://learndigital.withgoogle.com/activate/validate-certificate-code</a></p>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box">
+          <div class="icon"><i class="bi bi-award-fill"></i></div>
+          <h4 class="title"><p>Introduccion al Desarrollo Web II </p></h4>
+          <p class="description">Completado en Google Activate. Id certificacion:EK4 3TC VPZ. Link de verificación:</p><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">https://learndigital.withgoogle.com/activate/validate-certificate-code</a>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box">
+          <div class="icon"><i class="bi bi-award-fill"></i></div>
+          <h4 class="title"><p>Learn HTML</p></h4>
+          <p class="description">Completado en Udemy. Link de verificación:</p><a href="https://www.ude.my/UC-1a355345-f7eca72-ba15-9857035dbe97">ude.my/UC-1a355345-f7eca72-ba15-9857035dbe97</a>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box">
+          <div class="icon"><i class="bi bi-award-fill"></i></div>
+          <h4 class="title"><p href="">Learn JavaScript</p></h4>
+          <p class="description">Completado en Udemy. Link de verificación:</p><a href="https://www.UC-e75f3939-9689-4ee6-a2dd-12a220c5e0c4">UC-e75f3939-9689-4ee6-a2dd-12a220c5e0c4</a>
+        </div>
+      </div>
+    </div>
+      <!-- ======= End Studies Section ======= -->
+      <br><br><br><br><br><br><br><br><br>
+      <!-- ======= Experience Section ======= -->
+    <div id="experiencia">
+      <br>
+      <div class="container">
+        <div class="section-title">
+          <h2>Experiencia laboral</h2>
+          <p>Si bien todavia no poseo experiencia laboral en el ambito, estoy acostumbrado y me siento comodo trabajando con clientes y en grupo.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 class="title"><p>Aquí podría estar su empresa.</p></h4>
+            <p class="description">Solo debe contratarme y podrá disfrutar de publicidad gratuita en este bello portfolio.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 class="title"><p>Dueño de local dietetica</p></h4>
+            <p class="description">Durante los últimos 3 años administre mi propio local de alimentos, desde atender clientes a manejo de proveedores y administracion.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 class="title"><p>Venta y coordinacion de viajes</p></h4>
+            <p class="description">Durante 2 años me dedique a vender viajes de fin de curso en una empresa de turismo, para luego llevarlos yo a destino, considero que me dio un buen manejo de grupo y resolucion de problemas.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 class="title"><p>"Team leader of village and mountain activities"</p></h4>
+            <p class="description">Trabajé durante una temporada como lider de grupo en California, ésto me ayudo a mejorar mi ingles y a trabajar en equipo.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 class="title"><p>Encargado de atencion al cliente</p></h4>
+            <p class="description">A los 16 años por deseo de independencia economica y para ayudar en mi casa comencé a trabajar en Arcos Dorados como cajero para terminar luego de casi 4 años en encargado de atencion al cliente, una vez mas, esto me ayudo a trabajar en equipo y a tratar con personas</p>
+          </div>
+      </div>
+    </div>
+  </section>
+      <!-- End Experience Section -->
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Mi portfolio</h2>
+          <h4>(Los proyectos pueden tardar unos segundos en cargar, ya que estan alojados en Hostinger, 
+            donde si no se utilizan frecuentemente se ponen en hibernacion)</h4>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/dulceria.png' %}" class="img-fluid" alt="" style="height: 15rem;">
+              <div class="portfolio-info">
+                <h3><a href="https://tiendaonlineluca.herokuapp.com/" target="_blank">Tienda online</a></h3>
+                <div>
+                  <p style="background-color: #70b9b0; color: black;">
+                    Este es mi primer proyecto completo, 
+                    todo es funcional y esta realizado con django.<br>
+                    Los produtos, servicios y blogs se cargan dinamicamente en la plantilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/juego.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h3><a href="{% static 'descargas/principal.rar' %}" download="Juego_De_Luca.rar">Juego por consola</a></h3>
+                <div>
+                  <p style="background-color: #70b9b0; color: black;">
+                    Mi primer proyecto con python puro, fue una prueba de si realmente entendía el lenguaje.<br>
+                    Descomprimir y abrir el ejecutable .exe y a disfritar :)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Si deseas contactarme</h2>
+          <p>Ademas de por este formulario, puedes contactame por linkedin, muchas gracias por tenerme en cuenta. :)</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-12">
+            <form action="", method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa tu email" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="text-center" >
+                <input type="submit" value="Enviar" class="btn btn-success" style="background-color: #70b9b0;margin-top: 1rem;"></input>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="https://kit.fontawesome.com/b29381595a.js" crossorigin="anonymous"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</body>
+</html>
