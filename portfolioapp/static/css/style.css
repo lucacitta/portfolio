@@ -283,6 +283,16 @@ section {
   visibility: visible;
 }
 
+#Es{
+  width: 70px;
+  height: 40px;
+}
+
+#En{
+  width: 70px;
+  height: 40px;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -291,9 +301,8 @@ section {
     left: -100%;
   }
 }
-
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -304,7 +313,7 @@ section {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1219px) {
   .mobile-nav-toggle {
     display: block;
   }

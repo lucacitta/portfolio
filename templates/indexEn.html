@@ -40,12 +40,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre mí</a></li>
-          <li><a class="nav-link scrollto" href="#services">Estudios</a></li>
-          <li><a class="nav-link scrollto" href="#experiencia">Experiencia</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Studies</a></li>
+          <li><a class="nav-link scrollto" href="#experiencia">Experience</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="nav-link scrollto" href="{% url 'home' %}"><img src="{% static 'img/portfolio/argentina.png' %}" class="nav-link scrollto" id="Es" ></a></li>
           <li><a class="nav-link scrollto" href="{% url 'homeEn' %}"><img src="{% static 'img/portfolio/estadosUnidos.png' %}" class="nav-link scrollto" id="En" ></a></li>
         </ul>
@@ -60,12 +60,11 @@
     <div class="hero-container">
       {% if 'valido' in request.GET %}
       <div class="alert alert-success" role="alert">
-        El formulario se envio correctamente, deberia llegarte un mail de confirmacion, muchas gracias por contactar :)
-      </div>
+        Your message was sent successfully, check your email for a confirmation, thanks you for contact me :)      </div>
       {% endif %}
       <h1>Luca Cittá Giordano</h1>
-      <h2>Soy programador Python y desarrollador Backend</h2>
-      <a href="#about" class="btn-get-started scrollto">Comencemos</a>
+      <h2> I'm a Python programmer and a Backend developer</h2>
+      <a href="#about" class="btn-get-started scrollto">Let's begin</a>
     </div>
   </section><!-- #hero -->
 
@@ -75,7 +74,7 @@
     <section id="about" class="about">
       <div class="container">
         <div class="section-title">
-          <h2>Sobre mí</h2>
+          <h2>About me</h2>
         </div>
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
@@ -88,18 +87,18 @@
             </i>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h3>Soy Luca Cittá Giordano, argentino de 22 años Actualmente viviendo en Valencia, España.</h3>
+            <h3>I'm Luca Citta Giordano, from Argentina. I am 22 years old and I am currently living in Valencia, Spain.</h3>
             <p class="fst-italic">
-              Siempre me gusto la programacion, pero nunca lo habia pensado realmente como una carrera, siempre fue mas un hobbie, programando arduinos y cosas simples.
+              I always liked programming, but at first I couldn`t see it as career, it was just a hobbie, programming arduino and other little things.
             </p>
             <p>
-              Hace ya un tiempo que me me propuse trabajar de lo que me guste, aunque no sea exactamente lo que estoy estudiando me apaciona y quiero convertirme en un buen profesional. <br>
-              Actualmente estoy estudiando principalmente programación en Python orientado al backend con Django, pero me gustaria expandirme a otras tecnologias como Java Script para ampliar mi stack de herramientas.
+              Some time ago, I had a paradigm shift and I proposed to myself that I would start looking at this as more than just a hobbie, and more like a way of life. I found my passion in programming, something that never happened to me before, and thats why I want to achive my full potential in the field.<br>
+              Right now, I'm working in personal projects with Python oriented at backend using Django as a framework, but I also want to expand my knowledge to other tecnologies, like JavaScript, to grow as professional.
             </p>
             <ul>
-              <li><i class="bi bi-check2-circle"></i>Me gusta trabajar en equipo y conocer gente nueva.</li>
-              <li><i class="bi bi-check2-circle"></i>Estoy ansioso por seguir aprendiendo y crecer como profesional.</li>
-              <li><i class="bi bi-check2-circle"></i>Estoy listo para enfrentar los desafios del mundo laboral en el ambito.</li>
+              <li><i class="bi bi-check2-circle"></i>I`m a people person, I like working as a team and meeting new people.</li>
+              <li><i class="bi bi-check2-circle"></i>I am really looking forward to keep learning and improving my tech and soft skills.</li>
+              <li><i class="bi bi-check2-circle"></i>I am certain that I am ready to face real-world challenges in real world projects.</li>
             </ul>
             <div class="social">
               <a href="https://www.linkedin.com/in/luca-citta-giordano-3a70b120a/"><i class="bi bi-linkedin" id="icon1"></i></a>
@@ -114,59 +113,59 @@
     <section id="services" class="services section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>Estudios</h2>
-          <p>Estos son mis estudios hasta la fecha, continuare realizando cursos para crecer como profesional y los agregare aquí.</p>
+          <h2>Studies</h2>
+          <p>These are my studies to date, but, as tech is a huge world, I like to always be on the move and train myselft on new technologies.</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-award-fill"></i></div>
-            <h4 class="title"><p href="">Bachillerato en turismo</p></h4>
-            <p class="description">Secundario completo en Colegio Normal numero 2 en la modalidad de turismo.</p>
+            <h4 class="title"><p href="">High school oriented at tourism.</p></h4>
+            <p class="description">High school completed in 2016 at "Colegio Normal 2".</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-award"></i></div>
-            <h4 class="title"><p>Tecnicatura Universitaria en Mecatronica</p></h4>
-            <p class="description">Actualmente solo me falta la tesis para obtener mi titulo.</p>
+            <h4 class="title"><p>Undergraduate in Mechatronic.</p></h4>
+            <p class="description">I only need the final project to graduate.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-award-fill"></i></div>
             <h4 class="title"><p>Python And Django Framework For Beginners Complete Courses</p></h4>
-            <p><p class="description">Completado en Udemy. Link de verificación:</p><a href="https://www.ude.my/UC-afd1e1ac-7b5f-4fc5-8541-e001dd7f6697">ude.my/UC-afd1e1ac-7b5f-4fc5-8541-e001dd7f6697</a></p>
+            <p><p class="description">Completed in Udemy. Verificarion link:</p><a href="https://www.ude.my/UC-afd1e1ac-7b5f-4fc5-8541-e001dd7f6697">ude.my/UC-afd1e1ac-7b5f-4fc5-8541-e001dd7f6697</a></p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-award-fill"></i></div>
-            <h4 class="title"><p href="">Curso introductorio de Python online</p></h4>
-            <p class="description">Curso completado en IEEE, no posee link de verificacion.</p>
+            <h4 class="title"><p href="">Introductory course to python online.</p></h4>
+            <p class="description">Course completed in IEEE, it don't have a verification link.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-award-fill"></i></div>
-            <h4 class="title"><p href="">PROBAR DJANGO | Crear una Aplicación Web</p></h4>
-            <p class="description">Completado en Udemy, al ser gratuito no posee entrega de certificado.</p>
+            <h4 class="title"><p href="">Django | Create a web app</p></h4>
+            <p class="description">Course completed in Udemy Academy, but it's free, so it don't give a certificate.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-award-fill"></i></div>
             <h4 class="title"><p href="">Python 3.X</p></h4>
-            <p class="description">Completado en Edutin, al haberlo realizado de manera gratuita no entrega certificado.</p>
+            <p class="description">Course completed in Edutin Academy, but i didn't pay for the certificated.</p>
           </div>
         <div class="col-lg-4 col-md-6 icon-box">
           <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title"><p>Curso de Introducción al Desarrollo Web: HTML y CSS </p></h4>
-          <p><p class="description">Completado en Google Activate. Id certificacion:KCE QNH NW3. Link de verificación:</p><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">https://learndigital.withgoogle.com/activate/validate-certificate-code</a></p>
+          <h4 class="title"><p>Course of Introduction to web development: HTML and CSS.</p></h4>
+          <p><p class="description">Completed in Google Activate. Certificade Id : KCE QNH NW3. Verfication link:</p><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">https://learndigital.withgoogle.com/activate/validate-certificate-code</a></p>
         </div>
         <div class="col-lg-4 col-md-6 icon-box">
           <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title"><p>Introduccion al Desarrollo Web II </p></h4>
-          <p class="description">Completado en Google Activate. Id certificacion:EK4 3TC VPZ. Link de verificación:</p><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">https://learndigital.withgoogle.com/activate/validate-certificate-code</a>
+          <h4 class="title"><p>Course of Introduction to web development II </p></h4>
+          <p class="description">Completed in Google Activate. Certificade Id : EK4 3TC VPZ. Verfication link:</p><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">https://learndigital.withgoogle.com/activate/validate-certificate-code</a>
         </div>
         <div class="col-lg-4 col-md-6 icon-box">
           <div class="icon"><i class="bi bi-award-fill"></i></div>
           <h4 class="title"><p>Learn HTML</p></h4>
-          <p class="description">Completado en Udemy. Link de verificación:</p><a href="https://www.ude.my/UC-1a355345-f7eca72-ba15-9857035dbe97">ude.my/UC-1a355345-f7eca72-ba15-9857035dbe97</a>
+          <p class="description">Completed in Udemy Academy. Verfication link:</p><a href="https://www.ude.my/UC-1a355345-f7eca72-ba15-9857035dbe97">ude.my/UC-1a355345-f7eca72-ba15-9857035dbe97</a>
         </div>
         <div class="col-lg-4 col-md-6 icon-box">
           <div class="icon"><i class="bi bi-award-fill"></i></div>
           <h4 class="title"><p href="">Learn JavaScript</p></h4>
-          <p class="description">Completado en Udemy. Link de verificación:</p><a href="https://www.UC-e75f3939-9689-4ee6-a2dd-12a220c5e0c4">UC-e75f3939-9689-4ee6-a2dd-12a220c5e0c4</a>
+          <p class="description">Completed in Udemy Academy. Verfication link:</p><a href="https://www.UC-e75f3939-9689-4ee6-a2dd-12a220c5e0c4">UC-e75f3939-9689-4ee6-a2dd-12a220c5e0c4</a>
         </div>
       </div>
     </div>
@@ -177,34 +176,34 @@
       <br>
       <div class="container">
         <div class="section-title">
-          <h2>Experiencia laboral</h2>
-          <p>Si bien todavia no poseo experiencia laboral en el ambito, estoy acostumbrado y me siento comodo trabajando con clientes y en grupo.</p>
+          <h2>Experience</h2>
+          <p>Yes, right now I don't have working experience in IT, but i have experience working as a team and also coordination people.</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
-            <h4 class="title"><p>Aquí podría estar su empresa.</p></h4>
-            <p class="description">Solo debe contratarme y podrá disfrutar de publicidad gratuita en este bello portfolio.</p>
+            <h4 class="title"><p>Your business could be here.</p></h4><br>
+            <p class="description">It's easy, you only need to hire me, and enjoy of the free advertise in this beautiful place!!</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
-            <h4 class="title"><p>Dueño de local dietetica</p></h4>
-            <p class="description">Durante los últimos 3 años administre mi propio local de alimentos, desde atender clientes a manejo de proveedores y administracion.</p>
+            <h4 class="title"><p>Owner of my own business "Moderna Dietetica".</p></h4>
+            <p class="description">The last 3 years I had been administrating my own place, working with employees, product suppliers and clients.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
-            <h4 class="title"><p>Venta y coordinacion de viajes</p></h4>
-            <p class="description">Durante 2 años me dedique a vender viajes de fin de curso en una empresa de turismo, para luego llevarlos yo a destino, considero que me dio un buen manejo de grupo y resolucion de problemas.</p>
+            <h4 class="title"><p>Seller and coordinator of trips for high school graduates.</p></h4>
+            <p class="description">For over two years I`ve worked in a tourism business, selling trips and then coordinating them the whole stay. This job trained me to work under special situations(usually under pressure), where I had to come up with last minute solutions, so I developed problem solving and group coordination skills.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
             <h4 class="title"><p>"Team leader of village and mountain activities"</p></h4>
-            <p class="description">Trabajé durante una temporada como lider de grupo en California, ésto me ayudo a mejorar mi ingles y a trabajar en equipo.</p>
+            <p class="description">I worked a whole winter season as a team leader in California, this really help me to improve my English skills.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box">
             <div class="icon"><i class="bi bi-briefcase-fill"></i></div>
-            <h4 class="title"><p>Encargado de atencion al cliente</p></h4>
-            <p class="description">A los 16 años por deseo de independencia economica y para ayudar en mi casa comencé a trabajar en Arcos Dorados como cajero para terminar luego de casi 4 años en encargado de atencion al cliente, una vez mas, esto me ayudo a trabajar en equipo y a tratar con personas</p>
+            <h4 class="title"><p>Customer service attendant</p></h4>
+            <p class="description">With only 16 years, in need and desire of economic independence, I started my career journey at Arcos Dorados, I started as a cashier and ended up, after almost 4 years, as one of the customer managers in the store.</p>
           </div>
       </div>
     </div>
@@ -216,9 +215,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Mi portfolio</h2>
-          <h4>(Los proyectos pueden tardar unos segundos en cargar, ya que estan alojados en Hostinger, 
-            donde si no se utilizan frecuentemente se ponen en hibernacion)</h4>
+          <h2>My portfolio</h2>
+          <h4>(The projects can take a few seconds to load, as they are hosted in free servers).</h4>
         </div>
 
         <div class="row portfolio-container">
@@ -227,12 +225,11 @@
             <div class="portfolio-wrap">
               <img src="{% static 'img/portfolio/dulceria.png' %}" class="img-fluid" alt="" style="height: 15rem;">
               <div class="portfolio-info">
-                <h3><a href="https://tiendaonlineluca.herokuapp.com/" target="_blank">Tienda online</a></h3>
+                <h3><a href="https://tiendaonlineluca.herokuapp.com/" target="_blank">E-commerce</a></h3>
                 <div>
                   <p style="background-color: #70b9b0; color: black;">
-                    Este es mi primer proyecto completo, 
-                    todo es funcional y esta realizado con django.<br>
-                    Los produtos, servicios y blogs se cargan dinamicamente en la plantilla.
+                    This is my first complete project, everything is functional and its made with Django.<br>
+                    The products, services and blogs get generated dynamically from the database (SQL).
                   </p>
                 </div>
               </div>
@@ -243,11 +240,11 @@
             <div class="portfolio-wrap">
               <img src="{% static 'img/portfolio/juego.png' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3><a href="{% static 'descargas/principal.rar' %}" download="Juego_De_Luca.rar">Juego por consola</a></h3>
+                <h3><a href="{% static 'descargas/principal.rar' %}" download="Juego_De_Luca.rar">RPG game in console</a></h3>
                 <div>
                   <p style="background-color: #70b9b0; color: black;">
-                    Mi primer proyecto con python puro, fue una prueba de si realmente entendía el lenguaje.<br>
-                    Descomprimir y abrir el ejecutable .exe y a disfritar :)
+                    My first project with Python vanilla, it was a personal test, to try my knowledge.<br>
+                    Decompress, execute the .exe and enjoy :)
                   </p>
                 </div>
               </div>
@@ -262,8 +259,8 @@
     <section id="contact" class="contact section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>Si deseas contactarme</h2>
-          <p>Ademas de por este formulario, puedes contactame por linkedin, muchas gracias por tenerme en cuenta. :)</p>
+          <h2>Contact me!</h2>
+          <p>You can do it from here or from my LinkedIn, promise I will respond in a short period of time :)</p>
         </div>
 
         <div class="row justify-content-center">
@@ -271,19 +268,19 @@
             <form action="", method="POST">
               {% csrf_token %}
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
               </div>
               <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa tu email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject here" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="  Enter your message" required></textarea>
               </div>
               <div class="text-center" >
-                <input type="submit" value="Enviar" class="btn btn-success" style="background-color: #70b9b0;margin-top: 1rem;"></input>
+                <input type="submit" value="Send" class="btn btn-success" style="background-color: #70b9b0;margin-top: 1rem;"></input>
               </div>
             </form>
           </div>
