@@ -49,4 +49,4 @@ def homeEn(request):
             fail_silently=False,
             )
         return redirect('indexEn/?valido')
-    return render(request,'indexEn.html',{})
+    return render(request,'indexEn.html',{}) 
